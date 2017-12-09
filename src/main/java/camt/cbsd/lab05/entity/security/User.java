@@ -1,7 +1,6 @@
 package camt.cbsd.lab05.entity.security;
 
 import camt.cbsd.lab05.config.json.View;
-import camt.cbsd.lab05.entity.Student;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonView;

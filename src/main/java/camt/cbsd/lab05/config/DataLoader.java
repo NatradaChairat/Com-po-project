@@ -1,9 +1,5 @@
 package camt.cbsd.lab05.config;
 
-import camt.cbsd.lab05.dao.CourseDao;
-import camt.cbsd.lab05.dao.StudentDao;
-import camt.cbsd.lab05.entity.Course;
-import camt.cbsd.lab05.entity.Student;
 import camt.cbsd.lab05.entity.security.Authority;
 import camt.cbsd.lab05.entity.security.AuthorityName;
 import camt.cbsd.lab05.entity.security.User;
@@ -56,7 +52,7 @@ public class DataLoader implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         imageBaseUrl = baseUrl + imageUrl;
-        Student student1 = Student.builder().studentId("SE-001").name("Mitsuha").surname("Miyamizu")
+        /*Student student1 = Student.builder().studentId("SE-001").name("Mitsuha").surname("Miyamizu")
                 .gpa(2.15).image(imageBaseUrl + "mitsuha.gif").feature(true)
                 .penAmount(0).description("The most beloved one").build();
         Student student2 = Student.builder().studentId("SE-002").name("Prayuth").surname("The minister")
@@ -90,7 +86,7 @@ public class DataLoader implements ApplicationRunner {
         student2.setUser(user2);
         user2.setStudent(student2);
         student3.setUser(user3);
-        user3.setStudent(student3);
+        user3.setStudent(student3);*/
     }
 
 
@@ -100,7 +96,7 @@ public class DataLoader implements ApplicationRunner {
         authorityRepository.save(auth1);
         authorityRepository.save(auth2);
 
-        user1 = User.builder()
+        /*user1 = User.builder()
                 .username("admin")
                 .password("admin")
                 .firstname("admin")
@@ -140,7 +136,7 @@ public class DataLoader implements ApplicationRunner {
 
         userRepository .save(user1);
         userRepository .save(user2);
-        userRepository .save(user3);
+        userRepository .save(user3);*/
     }
 }
 

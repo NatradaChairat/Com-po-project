@@ -1,0 +1,33 @@
+<div class="row panel-body">
+  <div class="col-md-8 col-sm-8">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for..." [(ngModel)]="search">
+      <span class="input-group-btn">
+          <button class="btn btn-default" type="button" (click)="onSearch()">Go!</button>
+        </span>
+    </div>
+  </div>
+</div>
+
+<div *ngFor="let product of products" class="row">
+  <div class="panel panel-body col-md-4 col-sm-6" (click)="showDetail(product)" >
+    <img class="img-responsive" [src]="product.image" [title] = "product.name">
+    <div class="row">
+        <div class="col-md-4">
+          <p>Crave: </p>
+        </div>
+        <div class="col-md-8">
+          <p>{{product.name}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <p>${{product.price}}</p>
+        </div>
+      </div>
+    <button class="btn btn-outline-secondary btn-block" (click)="onAddToCart()">Add to Cart</button>
+  </div>
+
+
+
+
