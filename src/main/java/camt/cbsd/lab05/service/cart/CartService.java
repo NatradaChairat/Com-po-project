@@ -1,4 +1,4 @@
-package camt.cbsd.lab05.service;
+package camt.cbsd.lab05.service.cart;
 
 import camt.cbsd.lab05.entity.security.Cart;
 

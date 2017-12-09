@@ -1,4 +1,4 @@
-package camt.cbsd.lab05.service;
+package camt.cbsd.lab05.service.customer;
 
 import camt.cbsd.lab05.entity.security.Customer;
 

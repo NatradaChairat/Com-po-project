@@ -3,9 +3,11 @@ package camt.cbsd.lab05.dao.shopkeeper;
 import camt.cbsd.lab05.entity.security.Shopkeeper;
 import camt.cbsd.lab05.repository.ShopkeeperRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class ShopkeeperDaoImpl implements ShopkeeperDao {
     @Autowired
     ShopkeeperRepository shopkeeperRepository;

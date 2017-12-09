@@ -1,4 +1,4 @@
-package camt.cbsd.lab05.service;
+package camt.cbsd.lab05.service.shopkeeper;
 
 import camt.cbsd.lab05.entity.security.Shopkeeper;
 

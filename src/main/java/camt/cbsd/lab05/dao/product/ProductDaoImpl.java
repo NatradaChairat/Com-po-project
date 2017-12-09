@@ -4,9 +4,11 @@ import camt.cbsd.lab05.entity.security.Product;
 import camt.cbsd.lab05.repository.ProductRepository;
 import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class ProductDaoImpl implements ProductDao {
     ProductRepository productRepository;
     @Autowired
