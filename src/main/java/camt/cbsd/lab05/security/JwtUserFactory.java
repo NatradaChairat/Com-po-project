@@ -2,8 +2,6 @@ package camt.cbsd.lab05.security;
 
 
 
-import camt.cbsd.lab05.entity.security.Authority;
-import camt.cbsd.lab05.entity.security.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 

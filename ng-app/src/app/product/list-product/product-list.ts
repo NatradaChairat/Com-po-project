@@ -14,7 +14,7 @@ export class NoItemComponent implements OnInit {
   products: Product[];
 
   @Input() product:Product = {
-    id : "",
+    productId : "",
     name : "",
     image : "",
     price : 0.0,
@@ -32,14 +32,14 @@ export class NoItemComponent implements OnInit {
   }
 
   showDetail() {
-    this.router.navigate(['detail', this.product.id]);
+    this.router.navigate(['detail', this.product.productId]);
   }
   onSearch(){
     this.productService.findProduct(this.search)
-      .subscribe(students => this.products = products,
+      .subscribe(products => this.products = product,
       (error) => {
         if (error.status === 401) {
-          this.router.navigate(['login'], {queryParams: {source: 'student'}});
+          this.router.navigate(['login'], {queryParams: {source: 'product'}});
         }
       });
   }

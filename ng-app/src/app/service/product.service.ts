@@ -9,7 +9,7 @@ export class ProductService implements OnInit{
     private http: Http
   ) {}
   products: Product[] = [{
-      id : "CC-01",
+      productId : "CC-01",
       name : "Durian Mask Cake",
       image : "https://goo.gl/hf75yt",
       price : 480,
@@ -17,7 +17,7 @@ export class ProductService implements OnInit{
       selected: 1,
       description : "1 pound: vanilla layer and durian cream."
   },{
-      id : "CC-02",
+      productId : "CC-02",
       name : "Pony Mask Cake",
       image : "https://goo.gl/8NCHTz",
       price : 480,
@@ -25,7 +25,7 @@ export class ProductService implements OnInit{
       selected: 2,
       description : "1 pound: vanilla layer with strawberry cream."
   },{
-    id : "CC-03",
+    productId : "CC-03",
     name : "Samurai Mask Cake",
     image : "https://goo.gl/KNasVF",
     price : 480,
@@ -33,7 +33,7 @@ export class ProductService implements OnInit{
     selected: 1,
     description : "1 pound: hokkaido milk flavor."
   },{
-    id : "CC-04",
+    productId : "CC-04",
     name : "Sumo Mask Cake",
     image : "https://goo.gl/hf75yt",
     price : 480,

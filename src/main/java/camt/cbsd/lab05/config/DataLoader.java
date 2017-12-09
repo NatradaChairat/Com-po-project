@@ -1,8 +1,5 @@
 package camt.cbsd.lab05.config;
 
-import camt.cbsd.lab05.entity.security.Authority;
-import camt.cbsd.lab05.entity.security.AuthorityName;
-import camt.cbsd.lab05.entity.security.User;
 import camt.cbsd.lab05.security.repository.AuthorityRepository;
 import camt.cbsd.lab05.security.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +9,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.ArrayList;
-import java.util.Date;
 
 @ConfigurationProperties(prefix = "server")
 @Component
