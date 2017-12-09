@@ -10,9 +10,9 @@ public interface ProductDao {
     void deleteProduct(String productId);
 
     Product findById(long id);
-    Product findByCode(String id);
+    Product findByProductId(String productId);
     List<Product> getAllProducts();
-    List<Product> searchProductsByName(String query);
-    List<Product> searchProductsByDescription(String query);
+    List<Product> searchProductsByName(String name);
+    List<Product> searchProductsByDescription(String description);
     List<Product> searchProductsByPrice(double low, double high);
 }
