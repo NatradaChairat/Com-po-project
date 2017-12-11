@@ -12,6 +12,7 @@ public interface ProductDao {
     Product findById(long id);
     Product findByProductId(String productId);
     List<Product> getAllProducts();
+    List<Product> getProductsSearch(String searchText);
     List<Product> searchProductsByName(String name);
     List<Product> searchProductsByDescription(String description);
     List<Product> searchProductsByPrice(double low, double high);

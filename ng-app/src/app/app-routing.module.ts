@@ -4,12 +4,10 @@ import {FileNotFoundComponent} from "./filenotfound/file-not-found.component";
 import {ProductListComponent} from './product/list-product/product-list';
 import {ProductDetailComponent} from './product/detail-product/product-detail';
 import {ProductAddComponent} from './product/add-product/product-add';
-import {ProductSearchComponent} from './product/search-product/product-search';
 import {CartComponent} from './cart/cart';
 
 const appRoutes: Routes = [
   {path: 'product', component: ProductListComponent},
-  {path: 'searchProduct', component: ProductSearchComponent},
   {path: 'detail/:id', component: ProductDetailComponent,
     data: {
       product: {

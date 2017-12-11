@@ -13,7 +13,7 @@ import javax.validation.ReportAsSingleViolation;
 import java.util.List;
 
 
-@ConfigurationProperties(prefix = "server")
+
 @Service
 public class ProductServiceImpl implements ProductService{
     String imageBaseUrl;
@@ -54,6 +54,14 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public void deleteProduct(String productId) {
         this.productDao.deleteProduct(productId);
+    }
+
+    @Override
+    public List<Product> queryProduct(String query) {
+        if (query == null || query.equals("")) {
+            return productDao.getAllProducts();
+        }
+        return productDao.getProductsSearch(query);
     }
 
     @Override

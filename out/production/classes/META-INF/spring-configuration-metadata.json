@@ -7,19 +7,14 @@
       "type": "camt.cbsd.lab05.config.DataLoader"
     },
     {
-      "sourceType": "camt.cbsd.lab05.service.shopkeeper.ShopkeeperServiceImpl",
-      "name": "server",
-      "type": "camt.cbsd.lab05.service.shopkeeper.ShopkeeperServiceImpl"
-    },
-    {
       "sourceType": "camt.cbsd.lab05.service.customer.CustomerServiceImpl",
       "name": "server",
       "type": "camt.cbsd.lab05.service.customer.CustomerServiceImpl"
     },
     {
-      "sourceType": "camt.cbsd.lab05.service.product.ProductServiceImpl",
+      "sourceType": "camt.cbsd.lab05.service.shopkeeper.ShopkeeperServiceImpl",
       "name": "server",
-      "type": "camt.cbsd.lab05.service.product.ProductServiceImpl"
+      "type": "camt.cbsd.lab05.service.shopkeeper.ShopkeeperServiceImpl"
     },
     {
       "sourceType": "camt.cbsd.lab05.service.cart.CartServiceImpl",
@@ -37,11 +32,6 @@
       "sourceType": "camt.cbsd.lab05.service.customer.CustomerServiceImpl",
       "name": "server.all-customers",
       "type": "java.util.List<camt.cbsd.lab05.entity.security.Customer>"
-    },
-    {
-      "sourceType": "camt.cbsd.lab05.service.product.ProductServiceImpl",
-      "name": "server.all-products",
-      "type": "java.util.List<camt.cbsd.lab05.entity.security.Product>"
     },
     {
       "sourceType": "camt.cbsd.lab05.service.shopkeeper.ShopkeeperServiceImpl",

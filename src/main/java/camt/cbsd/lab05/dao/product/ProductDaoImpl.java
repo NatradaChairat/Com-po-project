@@ -48,7 +48,12 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public List<Product> getAllProducts() {
-        return Lists.newArrayList(productRepository.findAll());
+        return productRepository.findAll();
+    }
+
+    @Override
+    public List<Product> getProductsSearch(String searchText) {
+        return productRepository.findByNameIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(searchText,searchText);
     }
 
     @Override

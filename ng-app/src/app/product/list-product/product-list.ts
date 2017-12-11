@@ -9,39 +9,36 @@ import {ProductService} from '../../service/product.service';
   templateUrl: './product-list.html',
   styleUrls: ['./product-list.css']
 })
-export class ProductListComponent {
-  search: string;
+export class ProductListComponent implements OnInit{
+
   products: Product[];
 
-  @Input() product:Product = {
-    productId : "",
-    name : "",
-    image : "",
-    price : 0.0,
-    stock: 0,
-    selected: 0,
-    description : ""
-  };
 
-  numItemsInCart:number;
-
-  constructor(private router: Router/*, private cartService:CartService, private productService:ProductService*/) { }
+  constructor(private router: Router, private cartService:CartService, private productService:ProductService) { }
 
   ngOnInit() {
-    //this.cartService.numItems.subscribe(numItems => this.numItemsInCart = numItems);
+    this.productService.getProductData()
+      .subscribe(products => this.products = products);
   }
 
-  showDetail() {
-    this.router.navigate(['detail', this.product.productId]);
+  showDetail(product: Product) {
+    this.router.navigate(['detail', product.id]);
   }
+
+  search:string;
   onSearch(){
-    /*this.productService.findProduct(this.search)
+    this.productService.findProduct(this.search)
       .subscribe(products => this.products = products,
       (error) => {
         if (error.status === 401) {
-          this.router.navigate(['login'], {queryParams: {source: 'product'}});
+          //this.router.navigate(['product'], {queryParams: {source: 'product'}});
         }
-      });*/
+      });
+  }
+
+  onAddToCart(product: Product){
+    this.productService.getProductIncart().push(product);
+
   }
 
 

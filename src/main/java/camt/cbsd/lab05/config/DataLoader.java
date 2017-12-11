@@ -77,17 +77,17 @@ public class DataLoader implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         imageBaseUrl = baseUrl + imageUrl;
-        Product product1 = Product.builder().productId("CC-01").
-                name("Durian Mask Cake").image("durianCake.png").price(480).
+        Product product1 = Product.builder().id(1).productId("CC-01").
+                name("Durian Mask Cake").image(imageBaseUrl +"/durianCake.png").price(480).
                 description("1 pound: vanilla layer with durian cream.").build();
-        Product product2 = Product.builder().productId("CC-02").
-                name("Pony Mask Cake").image("ponyCake.png").price(480).
+        Product product2 = Product.builder().id(2).productId("CC-02").
+                name("Pony Mask Cake").image("https://www.snpfood.com/assets/media/2017-11/new-pony-mask-cake_2_1140x0.png").price(480).
                 description("1 pound: vanilla layer with strawberry cream.").build();
-        Product product3 = Product.builder().productId("CC-03").
-                name("Samurai Mask Cake").image("samuraiCake.png").price(480).
+        Product product3 = Product.builder().id(3).productId("CC-03").
+                name("Samurai Mask Cake").image(imageBaseUrl +"/samuraiCake.png").price(480).
                 description("1 pound: hokkaido milk flavor.").build();
-        Product product4 = Product.builder().productId("CC-04").
-                name("Sumo Mask Cake").image("sumoCake.png").price(480).
+        Product product4 = Product.builder().id(4).productId("CC-04").
+                name("Sumo Mask Cake").image(imageBaseUrl +"/sumoCake.png").price(480).
                 description("1 pound: hokkaido milk flavor.").build();
 
         Customer customer1 = Customer.builder().customerId("CT-01").name("Little Bunny").

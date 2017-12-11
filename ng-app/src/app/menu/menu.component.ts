@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Router} from "@angular/router";
 import {isUndefined} from 'util';
+import {CartService} from '../service/cart.service';
 
 @Component({
  selector: 'menu',
@@ -10,7 +11,7 @@ import {isUndefined} from 'util';
 export class MenuComponent {
   constructor(
 
-    private router: Router
+    private router: Router, cartService: CartService
 
   ) {}
 

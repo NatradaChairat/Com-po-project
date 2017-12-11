@@ -5,11 +5,11 @@
   font-weight: bold;
   text-shadow: 1px 2px #444;
 }
-.navbar .navbar-nav {
+.navbar .navbar-nav .mr-auto{
   float: left;
   margin: 5px;
-  padding-right: 100px;
-  font-size: 24px !important;
+  padding-right: 300px;
+  font-size: 30px !important;
   font-variant: small-caps;
 }
 

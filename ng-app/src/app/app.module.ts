@@ -11,7 +11,6 @@ import {ProductDetailComponent} from './product/detail-product/product-detail';
 import {ProductAddComponent} from './product/add-product/product-add';
 import {CartService} from './service/cart.service';
 import {ProductService} from './service/product.service';
-import {ProductSearchComponent} from './product/search-product/product-search';
 import {CartComponent} from './cart/cart';
 
 
@@ -20,7 +19,6 @@ import {CartComponent} from './cart/cart';
     ProductListComponent,
     ProductDetailComponent,
     ProductAddComponent,
-    ProductSearchComponent,
     CartComponent,
     MenuComponent, FileNotFoundComponent,
     ],
