@@ -6,11 +6,12 @@ import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
 import {FileNotFoundComponent} from './filenotfound/file-not-found.component';
 import {MenuComponent} from './menu/menu.component';
+import {ProductListComponent} from './product/list-product/product-list';
 
 
 @NgModule({
   declarations: [AppComponent,
-
+    ProductListComponent,
     MenuComponent, FileNotFoundComponent,
     ],
   imports: [BrowserModule, FormsModule, HttpModule,

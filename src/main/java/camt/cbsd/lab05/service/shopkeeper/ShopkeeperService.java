@@ -1,8 +1,10 @@
 package camt.cbsd.lab05.service.shopkeeper;
 
 import camt.cbsd.lab05.entity.security.Shopkeeper;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 
 public interface ShopkeeperService {
     List<Shopkeeper> getAllShopkeepers();

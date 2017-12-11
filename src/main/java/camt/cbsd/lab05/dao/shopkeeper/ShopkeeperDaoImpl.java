@@ -23,10 +23,6 @@ public class ShopkeeperDaoImpl implements ShopkeeperDao {
         return this.shopkeeperRepository.findByShopkeeperId(shopkeeperId);
     }
 
-    @Override
-    public Shopkeeper getShopkeeperByName(String name) {
-        return  this.shopkeeperRepository.findByShopkeeperName(name);
-    }
 
     @Override
     public void addShopkeeper(Shopkeeper shopkeeper) {

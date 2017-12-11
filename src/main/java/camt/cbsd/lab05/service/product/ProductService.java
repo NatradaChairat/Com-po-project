@@ -5,13 +5,15 @@ import camt.cbsd.lab05.entity.security.Product;
 import java.util.List;
 
 public interface ProductService {
-    Product add(Product product);
+
+    Product addProduct(Product product);
     void updateProduct(Product product);
     void deleteProduct(String productId);
 
-    Product getProduct(String productId);
+    Product findById(long id);
+    Product findByProductId(String productId);
     List<Product> getAllProducts();
-    List<Product> searchProductByName(String name);
-    List<Product> searchProductByDescription(String description);
-    List<Product> searchProductByPrice(double low, double high);
+    List<Product> searchProductsByName(String name);
+    List<Product> searchProductsByDescription(String description);
+    List<Product> searchProductsByPrice(double low, double high);
 }

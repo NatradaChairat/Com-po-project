@@ -8,5 +8,5 @@ import java.util.List;
 public interface ShopkeeperRepository extends CrudRepository<Shopkeeper, Long> {
     List<Shopkeeper> findAll();
     Shopkeeper findByShopkeeperId(String id);
-    Shopkeeper findByShopkeeperName(String name);
+
 }

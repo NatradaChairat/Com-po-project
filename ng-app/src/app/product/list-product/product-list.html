@@ -10,7 +10,7 @@
 </div>
 
 <div *ngFor="let product of products" class="row">
-  <div class="panel panel-body col-md-4 col-sm-6" (click)="showDetail(product)" >
+  <div class="panel panel-body col-md-8 col-sm-6" (click)="showDetail(product)" >
     <img class="img-responsive" [src]="product.image" [title] = "product.name">
     <div class="row">
         <div class="col-md-4">

@@ -21,7 +21,7 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     long id;
     String customerId;
-    String username;
+    String name;
     String phonenumber;
     String email;
 

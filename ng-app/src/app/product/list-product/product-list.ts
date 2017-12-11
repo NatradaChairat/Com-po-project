@@ -9,8 +9,8 @@ import {ProductService} from '../../service/product.service';
   templateUrl: './product-list.html',
   styleUrls: ['./product-list.css']
 })
-export class NoItemComponent implements OnInit {
-  search: string;
+export class ProductListComponent {
+  /*search: string;
   products: Product[];
 
   @Input() product:Product = {
@@ -42,7 +42,7 @@ export class NoItemComponent implements OnInit {
           this.router.navigate(['login'], {queryParams: {source: 'product'}});
         }
       });
-  }
+  }*/
 
 
 }

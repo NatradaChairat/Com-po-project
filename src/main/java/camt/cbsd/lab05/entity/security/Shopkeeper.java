@@ -1,6 +1,7 @@
 package camt.cbsd.lab05.entity.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnoreType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,7 +23,6 @@ public class Shopkeeper {
     @GeneratedValue(strategy = GenerationType.AUTO)
     long id;
     String shopkeeperId;
-    String firstname;
-    String lastname;
+    String name;
     String email;
 }

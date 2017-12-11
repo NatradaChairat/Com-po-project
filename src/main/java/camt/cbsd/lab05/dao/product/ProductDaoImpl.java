@@ -17,7 +17,7 @@ public class ProductDaoImpl implements ProductDao {
     }
 
     @Override
-    public Product add(Product product) {
+    public Product addProduct(Product product) {
         return this.productRepository.save(product);
     }
 
@@ -30,7 +30,6 @@ public class ProductDaoImpl implements ProductDao {
     public void deleteProduct(String productId) {
         Product product = findByProductId(productId);
         this.productRepository.delete(product);
-
     }
 
     @Override
@@ -41,9 +40,9 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public Product findByProductId(String productId) {
+
         return this.productRepository.findByProductId(productId);
     }
-
 
     @Override
     public List<Product> getAllProducts() {
@@ -57,7 +56,7 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public List<Product> searchProductsByDescription(String description) {
-        return Lists.newArrayList(productRepository.findByNameIgnoreCaseContainingOrderByName(description));
+        return Lists.newArrayList(productRepository.findByDescriptionIgnoreCaseContaining(description));
     }
 
     @Override

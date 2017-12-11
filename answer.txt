@@ -1,4 +1,0 @@
-1.3. <div *ngIf="error" class="alert alert-error">{{error}}</div>
-
-2.13. Cannot call sendError() after the response has been comitted.
-3.3. Only the fields with JsonView get returned.
