@@ -6,7 +6,7 @@ import camt.cbsd.lab05.dao.product.ProductDao;
 import camt.cbsd.lab05.dao.shopkeeper.ShopkeeperDao;
 import camt.cbsd.lab05.entity.security.Customer;
 import camt.cbsd.lab05.entity.security.Product;
-import camt.cbsd.lab05.entity.security.Shopkeeper;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

@@ -12,7 +12,7 @@ import {PurchaseService} from '../service/purchase.service';
 export class CartComponent implements OnInit {
 
 
-  constructor(private router:Router, private cartService:CartService, private purchaseService:PurchaseService) {
+  constructor(private router:Router/*, private cartService:CartService, private purchaseService:PurchaseService*/) {
   }
 
   ngOnInit() {

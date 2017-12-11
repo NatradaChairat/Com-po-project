@@ -1,0 +1,19 @@
+h1{
+  font-size: 30px !important;
+  font-variant: small-caps;
+  text-shadow: 1px 1px #444;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+#accordion{
+  padding-right: 140px;
+  padding-left: 100px;
+  padding-top: 10px;
+}
+.checkoutButton{
+  padding-right: 140px;
+  padding-left: 100px;
+  padding-top: 20px;
+  font-variant: small-caps;
+}

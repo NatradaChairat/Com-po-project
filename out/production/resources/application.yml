@@ -11,14 +11,6 @@ server:
   baseUrl: http://localhost:8080/
   imageUrl: images/
   imageServerDir : C:/images/project/
-jwt:
-  header: Authorization
-  secret: mySecret
-  expiration: 604800
-  route:
-    authentication:
-      path: auth
-      refresh: refresh
 
 ---
   profiles: inMemoryDB

@@ -5,12 +5,12 @@ import {CartService} from '../../service/cart.service';
 import {ProductService} from '../../service/product.service';
 
 @Component({
-  selector: 'app-list-product',
+  selector: 'app-product-list',
   templateUrl: './product-list.html',
   styleUrls: ['./product-list.css']
 })
 export class ProductListComponent {
-  /*search: string;
+  search: string;
   products: Product[];
 
   @Input() product:Product = {
@@ -25,24 +25,24 @@ export class ProductListComponent {
 
   numItemsInCart:number;
 
-  constructor(private router: Router, private cartService:CartService, private productService:ProductService) { }
+  constructor(private router: Router/*, private cartService:CartService, private productService:ProductService*/) { }
 
   ngOnInit() {
-    this.cartService.numItems.subscribe(numItems => this.numItemsInCart = numItems);
+    //this.cartService.numItems.subscribe(numItems => this.numItemsInCart = numItems);
   }
 
   showDetail() {
     this.router.navigate(['detail', this.product.productId]);
   }
   onSearch(){
-    this.productService.findProduct(this.search)
-      .subscribe(products => this.products = product,
+    /*this.productService.findProduct(this.search)
+      .subscribe(products => this.products = products,
       (error) => {
         if (error.status === 401) {
           this.router.navigate(['login'], {queryParams: {source: 'product'}});
         }
-      });
-  }*/
+      });*/
+  }
 
 
 }

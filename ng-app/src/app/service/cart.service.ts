@@ -5,7 +5,7 @@ import {PurchaseService} from './purchase.service';
 @Injectable()
 export class CartService {
 
-  constructor(private router:Router, private cartService:CartService, private purchaseService:PurchaseService) {
+  constructor(private router:Router/*, private cartService:CartService, private purchaseService:PurchaseService*/) {
   }
   onCheckout() {
 
