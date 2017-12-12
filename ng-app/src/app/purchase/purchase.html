@@ -1,21 +1,15 @@
-<h1>Purchase detail</h1>
-
-<div>
-
-
-</div>
-
+<h1>Total: ${{getTotalPrice()}}</h1>
 <fieldset class="form-group">
   <legend>Select payment</legend>
   <div class="form-check">
     <label class="form-check-label">
-      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" (click)="onConfirm('Transfer')" checked>
       Transfer
     </label>
   </div>
   <div class="form-check">
     <label class="form-check-label">
-      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2" (click)="onConfirm('Paypal')">
       Paypal
     </label>
   </div>

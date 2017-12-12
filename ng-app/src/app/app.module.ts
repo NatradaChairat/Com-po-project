@@ -16,6 +16,7 @@ import {PurchaseService} from './service/purchase.service';
 import {PurchaseComponent} from './purchase/purchase';
 import {LoginComponent} from './login/login';
 import {AuthenticationService} from './service/authentication.service';
+import {TransferComponent} from './transfer/transfer';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {AuthenticationService} from './service/authentication.service';
     CartComponent,
     PurchaseComponent,
     LoginComponent,
+    TransferComponent,
     MenuComponent, FileNotFoundComponent,
     ],
   imports: [BrowserModule, FormsModule, HttpModule,

@@ -8,6 +8,7 @@ import {CartComponent} from './cart/cart';
 import {PurchaseService} from './service/purchase.service';
 import {PurchaseComponent} from './purchase/purchase';
 import {LoginComponent} from './login/login';
+import {TransferComponent} from './transfer/transfer';
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
   },
   {path: 'cart', component: CartComponent},
   {path: 'purchase', component:PurchaseComponent},
+  {path: 'transfer', component:TransferComponent},
   {path: '**', component: FileNotFoundComponent}
 ];
 
