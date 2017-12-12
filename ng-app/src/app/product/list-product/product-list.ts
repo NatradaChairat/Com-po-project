@@ -38,7 +38,7 @@ export class ProductListComponent implements OnInit{
 
   onAddToCart(product: Product){
     this.productService.getProductIncart().push(product);
-
+    product.selected = 1;
   }
 
 

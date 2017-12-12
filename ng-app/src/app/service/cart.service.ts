@@ -14,7 +14,7 @@ export class CartService {
 
 
   constructor(
-    private router:Router/*, private cartService:CartService, private purchaseService:PurchaseService*/) {
+    private router:Router, private purchaseService:PurchaseService) {
     this.addCountProduct(this.products.length);
   }
   onCheckout() {

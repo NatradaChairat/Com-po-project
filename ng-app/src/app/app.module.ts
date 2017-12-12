@@ -12,6 +12,10 @@ import {ProductAddComponent} from './product/add-product/product-add';
 import {CartService} from './service/cart.service';
 import {ProductService} from './service/product.service';
 import {CartComponent} from './cart/cart';
+import {PurchaseService} from './service/purchase.service';
+import {PurchaseComponent} from './purchase/purchase';
+import {LoginComponent} from './login/login';
+import {AuthenticationService} from './service/authentication.service';
 
 
 @NgModule({
@@ -20,12 +24,14 @@ import {CartComponent} from './cart/cart';
     ProductDetailComponent,
     ProductAddComponent,
     CartComponent,
+    PurchaseComponent,
+    LoginComponent,
     MenuComponent, FileNotFoundComponent,
     ],
   imports: [BrowserModule, FormsModule, HttpModule,
     AppRoutingModule],
   bootstrap: [AppComponent],
-  providers: [CartService,ProductService],
+  providers: [CartService,ProductService,PurchaseService,AuthenticationService],
 })
 export class AppModule {
 }

@@ -7,31 +7,21 @@ import {AuthenticationService} from '../service/authentication.service';
   templateUrl: './login.html',
   styleUrls: ['./login.css']
 })
-export class LoginComponent implements OnInit {
-  model: any = {};
-  loading = false;
-  error = '';
+export class LoginComponent {
 
-  constructor(private router: Router,
-              private authenticationService: AuthenticationService,
-              private route: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.authenticationService.logout();
-
-    let source: String;
-    this.route.queryParams.subscribe(
-      params => {
-        if (params['source'])
-          source = params['source'];
-        else
-          source = null;
-      }
-    );
-
-    if (source) {
-      this.error = `Please login before use ${source} page.`;
-    }
+  constructor(private router: Router,private authenService: AuthenticationService) {
   }
 
+  ngOnInit() {
+
+  }
+
+  Lusername: string;
+  Lpassword: string;
+
+  onLogin() {
+    this.authenService.login(this.Lusername, this.Lpassword);
+
+  }
 }

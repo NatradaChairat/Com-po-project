@@ -4,10 +4,41 @@ import {Observable} from 'rxjs/Observable';
 
 @Injectable()
 export class AuthenticationService {
-  private authUrl = 'http://localhost:8080/auth';
-  private headers = new Headers({'Content-Type': 'application/json'})
+ /* private authUrl = 'http://localhost:8080/auth';
+  private headers = new Headers({'Content-Type': 'application/json'})*/
 
-  constructor(private http: Http) {}
+  status: string;
+  error: string;
+  constructor(private http: Http) {
+    this.status = "start";
+  }
+
+  login(username: string , password: string){
+
+    if(username == "customer" && password == "customer"){
+      this.status = "customer";
+    }
+    else if(username == "admin" && password == "admin"){
+      this.status = "admin";
+    }
+    else if(username == "shopkeeper" && password == "shopkeeper"){
+      this.status = "shopkeeper";
+    }
+    else if(username == "start" && password == "start"){
+      this.status = "start";
+    }
+
+    else {this.error = "please check username & password";}
+  }
+
+  logout(){
+    this.status = "start";
+    console.log(this.getStatus());
+  }
+
+  getStatus(){
+    return this.status;
+  }
 
  /* login(username: string, password: string): Observable<boolean> {
     return this.http.post(this.authUrl, JSON.stringify({
@@ -32,7 +63,7 @@ export class AuthenticationService {
       }).catch((error: any) => Observable.throw(error.json().error || 'Server error'));
   }*/
 
-  getToken(): string {
+  /*getToken(): string {
     var currentUser = JSON.parse(localStorage.getItem('currentUser'));
     var token = currentUser && currentUser.token;
     return token ? token : '';
@@ -44,9 +75,9 @@ export class AuthenticationService {
       return null;
     }
     return JSON.parse(details);
-  }
+  }*/
 
-  hasRole(role: string) {
+  /*hasRole(role: string) {
     let user: any = this.getCurrentUser();
     if (user) {
       let roleList: string[] = role.split(",");
@@ -61,12 +92,12 @@ export class AuthenticationService {
       }
       return false;
     }
-  }
+  }*/
 
-  logout(): void {
+  /*logout(): void {
     // clear token remove user from local storage to log user out
     localStorage.removeItem('currentUser');
     localStorage.removeItem('userDetails');
-  }
+  }*/
 
 }

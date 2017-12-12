@@ -5,8 +5,12 @@ import {ProductListComponent} from './product/list-product/product-list';
 import {ProductDetailComponent} from './product/detail-product/product-detail';
 import {ProductAddComponent} from './product/add-product/product-add';
 import {CartComponent} from './cart/cart';
+import {PurchaseService} from './service/purchase.service';
+import {PurchaseComponent} from './purchase/purchase';
+import {LoginComponent} from './login/login';
 
 const appRoutes: Routes = [
+  {path: 'login', component: LoginComponent},
   {path: 'product', component: ProductListComponent},
   {path: 'detail/:id', component: ProductDetailComponent,
     data: {
@@ -28,6 +32,7 @@ const appRoutes: Routes = [
     pathMatch: 'full'
   },
   {path: 'cart', component: CartComponent},
+  {path: 'purchase', component:PurchaseComponent},
   {path: '**', component: FileNotFoundComponent}
 ];
 
